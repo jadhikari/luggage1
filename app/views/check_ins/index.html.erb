@@ -1,0 +1,45 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Check ins</h1>
+
+<div >
+  
+  
+    
+    
+  
+</div>
+
+<%= link_to "New check in", new_check_in_path %>
+
+
+<div class="table-responsive" id="check_ins">
+  <table class="table table-primary">
+    <thead>
+      <tr>
+        <% CheckIn.column_names.each do |c| %>
+          <th scope="col"><%= c %></th>
+        <%end%>   
+      </tr>
+    </thead>
+    <tbody>
+      <% @check_ins.each do |check_in| %>
+      <tr class="">
+        <td scope="row"><%= check_in.id %></td>
+        <td scope="row"><%= check_in.luggage_num %></td>
+        <td scope="row"><%= check_in.name %></td>
+        <td scope="row"><%= check_in.room_num %></td>
+        <td scope="row"><%= check_in.people_num %></td>
+        <td scope="row"><%= check_in.received_date_time.strftime("%Y/%m/%d %H:%M") %></td>
+        <td scope="row"><%= check_in.received_by %></td>
+        <td scope="row"><%= check_in.checkout_date_time.strftime("%Y/%m/%d %H:%M") %></td>
+        <td scope="row"><%= check_in.checkout_by %></td>
+        <td scope="row"><%= check_in.remarks %></td>
+        <td scope="row"><%= check_in.created_at.strftime("%Y/%m/%d %H:%M") %></td>
+        <td scope="row"><%= check_in.updated_at.strftime("%Y/%m/%d %H:%M") %></td>
+        <td><%= link_to "Show this check in", check_in %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

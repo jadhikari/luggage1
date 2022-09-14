@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  luggage_num: 1
+  name: MyString
+  room_num: 1
+  people_num: 1
+  received_date_time: 2022-09-11 14:38:52
+  received_by: MyString
+  checkout_date_time: 2022-09-11 14:38:52
+  checkout_by: MyString
+  remarks: MyText
+
+two:
+  luggage_num: 1
+  name: MyString
+  room_num: 1
+  people_num: 1
+  received_date_time: 2022-09-11 14:38:52
+  received_by: MyString
+  checkout_date_time: 2022-09-11 14:38:52
+  checkout_by: MyString
+  remarks: MyText
